@@ -15,7 +15,7 @@ equalsound = SoundLoader.load('sounds/equal.wav') #equal click
 
 
 
-class CalcWindow(BoxLayout):
+class Main(BoxLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         # mobile device screen for iphone or andriods
@@ -91,10 +91,10 @@ class CalcWindow(BoxLayout):
            input.text = 'Error! \(x_x\) Tap Ca'
 
 
-class Calculator_JAApp(App):
+class mainApp(App):
     def build(self):
-        return CalcWindow()
+        return Main()
 
 
 if __name__ == '__main__':
-    Calculator_JAApp().run()
+    mainApp().run()
